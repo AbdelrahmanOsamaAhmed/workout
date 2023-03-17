@@ -1,0 +1,204 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main-text p {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+.workOut {
+  line-height: 260px;
+  font-size: 172px;
+  margin-bottom: 76px;
+}
+.main-pic {
+  margin-top: 100px;
+}
+/* .main-pic > div{
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.main-pic > div:hover{
+  transform: scale(1.05);
+} */
+.main-pic img {
+  width: 409px;
+  height: 684px;
+  margin-left: -100px;
+}
+.videoToturial {
+  width: 206px;
+  height: 96px;
+  background-color: #303030;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  margin-top: -250px;
+  margin-left: -180px;
+  
+}
+.videoIcon {
+  color: #ef8963;
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: auto;
+}
+.videoToturial p {
+  font-size: 13px;
+}
+.kilometer {
+  width: 140px;
+  height: 100px;
+  background-color: #ef8964;
+  margin-top: -570px;
+  margin-left: 100px;
+  border-radius: 12px;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+.kilometer h1 {
+  font-size: 40px;
+  letter-spacing: -2px;
+}
+.kilometer span {
+  font-size: 15px;
+  margin-left: 5px;
+  color: #efede8;
+}
+.personIcon {
+  color: white;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(218, 218, 218, 0.337);
+  border-radius: 50%;
+}
+.workoutVideo {
+  border-radius: 12px;
+  width: 165px;
+  height: 80px;
+  background-color: #7a29dc;
+  margin-top: 400px;
+  margin-left: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.workoutVideo h1 {
+  font-size: 30px;
+  text-align: center;
+}
+.workoutVideo p {
+  font-size: 13px;
+  text-align: center;
+}
+@media only screen and (max-width: 1920px) {
+  .workOut {
+    font-size: 150px;
+    line-height: 200px;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .workOut {
+    font-size: 100px;
+    line-height: 150px;
+  }
+  .main-pic img {
+    width: 309px;
+    height: auto;
+    margin-left: -40px;
+    margin-top: -50px;
+  }
+  .kilometer {
+    margin-top: -415px;
+  }
+  .workoutVideo {
+    margin-top: 250px;
+  }
+  .videoToturial {
+    margin-left: -155px;
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .workOut {
+    font-size: 75px;
+    line-height: 100px;
+    margin-bottom: 50px;
+  }
+  .main-pic img {
+    width: 200px;
+    height: auto;
+    margin-left: -50px;
+  }
+  .main-text p {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .main-pic img {
+    width: 110px;
+    height: auto;
+    margin-left: -15px;
+    margin-top: -80px;
+  }
+  .workOut {
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+  .main-text p {
+    width: 200px;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .kilometer {
+    margin-top: -240px;
+    margin-left: 20px;
+    width: 80px;
+    height: 55px;
+    padding-left: 10px;
+    padding-top: 0;
+  }
+  .kilometer h1 {
+    font-size: 20px;
+  }
+  .kilometer span {
+    font-size: 10px;
+  }
+  .personIcon {
+    height: 14px;
+    width: 14px;
+  }
+  .workoutVideo {
+    margin-left: 40px;
+    margin-top: 145px;
+    width: 80px;
+    height: 45px;
+  }
+  .workoutVideo h1 {
+    font-size: 15px;
+  }
+  .workoutVideo p {
+    font-size: 7px;
+  }
+  .videoToturial {
+    margin-left: -70px;
+    margin-top: -30px;
+    width: 100px;
+    height: 50px;
+    gap: 15px;
+  }
+  .videoToturial h3 {
+    font-size: 15px;
+  }
+  .videoToturial p {
+    font-size: 7px;
+  }
+  .videoIcon{
+    width: 20px;
+  }
+}
