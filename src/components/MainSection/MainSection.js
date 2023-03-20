@@ -2,6 +2,8 @@ import React from "react";
 import Section from "../UI/Section";
 import classes from "./MainSection.module.css";
 import mainPic from "../../assets/main-pic.png";
+import nike from '../../assets/nike.png';
+import buzzfeed from '../../assets/buzzfeed.png';
 import {
   faCirclePlay,
   faPersonRunning,
@@ -25,6 +27,14 @@ const MainSection = () => {
             <br />
             transformation stories to help you get fit and stay fit!
           </p>
+          <button className={classes["club-button"]}>Join Club Now</button>
+          <div className={classes.feature}>
+            <p>AS FEATURED IN</p>
+            <div className={classes.featured}>
+              <img src={nike} className={classes.nike} alt='nike'/>
+              <img src={buzzfeed} className={classes.buzzfeed} alt='buzzfeed'/>
+            </div>
+          </div>
         </div>
         <div className={classes["main-pic"]}>
           <img src={mainPic} alt="working man" />

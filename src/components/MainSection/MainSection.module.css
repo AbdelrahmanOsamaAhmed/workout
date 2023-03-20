@@ -15,13 +15,7 @@
 .main-pic {
   margin-top: 100px;
 }
-/* .main-pic > div{
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-.main-pic > div:hover{
-  transform: scale(1.05);
-} */
+
 .main-pic img {
   width: 409px;
   height: 684px;
@@ -38,7 +32,6 @@
   gap: 23px;
   margin-top: -250px;
   margin-left: -180px;
-  
 }
 .videoIcon {
   color: #ef8963;
@@ -94,6 +87,41 @@
 .workoutVideo p {
   font-size: 13px;
   text-align: center;
+}
+.club-button {
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #e6533c;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 50px;
+  font-weight: 600;
+  border: none;
+  margin-bottom: 110px;
+}
+.club-button:hover {
+  background-color: #d7432c;
+}
+.feature {
+  font-size: 14px;
+}
+.featured {
+  margin-top: 30px;
+}
+.featured img{
+  margin-right: 15px;
+}
+
+.nike {
+  width: 58px;
+  height: auto;
+}
+.buzzfeed{
+  width: 130px;
+  height: auto;
 }
 @media only screen and (max-width: 1920px) {
   .workOut {
@@ -198,7 +226,25 @@
   .videoToturial p {
     font-size: 7px;
   }
-  .videoIcon{
+  .videoIcon {
     width: 20px;
   }
+  .club-button {
+    width: 90px;
+    height: 30px;
+    font-size: 10px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+  .featured {
+    margin-top: 20px;
+  }
+  .nike {
+    width: 38px;
+    height: auto;
+  }
+  .buzzfeed{
+    width: 100px;
+  }
 }
+
