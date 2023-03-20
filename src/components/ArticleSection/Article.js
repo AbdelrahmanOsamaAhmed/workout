@@ -4,8 +4,10 @@ import Section from "../UI/Section";
 import classes from "./Article.module.css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import article1 from "../../assets/article1.png";
+import useWidthAndHeight from "../../hooks/useWidthAndHeight";
 const Article = ({ textRight, title, img }) => {
-  if (textRight) {
+  const [width] = useWidthAndHeight();
+  if (width > 1500 && textRight) {
     return (
       <Section>
         <div className={classes.wrapper}>
