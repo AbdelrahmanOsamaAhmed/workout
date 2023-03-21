@@ -1,0 +1,30 @@
+.link {
+  display: flex;
+  flex-direction: column;
+  width: 304px;
+  height: 190px;
+  border-radius: 12px;
+  justify-content: center;
+  padding: 40px;
+  transition: 0.25s ease-in-out;
+}
+.link h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+.link p {
+  font-size: 14px;
+  display: flex;
+  width: 200px;
+}
+.icon{
+    color: white;
+    width: 20px;
+    height: auto;
+    margin-top: 10px;
+}
+.link:hover{
+    opacity: 0.75;
+}

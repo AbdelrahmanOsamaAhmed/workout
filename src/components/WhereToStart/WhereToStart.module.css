@@ -1,0 +1,26 @@
+.wrapper {
+}
+.wrapper h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.wrapper p {
+  margin-bottom: 40px;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+@media only screen and (max-width: 600px) {
+  .wrapper h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .wrapper p {
+    margin-bottom: 40px;
+  }
+}

@@ -41,13 +41,12 @@
   }
   .text h1 {
     width: auto;
-    font-size: 20px;
+    font-size: 25px;
   }
   .text p {
     margin: 0 auto;
     margin-bottom: 30px;
     width: 280px;
-    font-size: 10px;
   }
   .see-more {
     margin: 0 auto;

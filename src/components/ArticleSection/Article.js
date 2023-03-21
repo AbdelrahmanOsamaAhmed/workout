@@ -3,7 +3,6 @@ import React from "react";
 import Section from "../UI/Section";
 import classes from "./Article.module.css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import article1 from "../../assets/article1.png";
 import useWidthAndHeight from "../../hooks/useWidthAndHeight";
 const Article = ({ textRight, title, img }) => {
   const [width] = useWidthAndHeight();
@@ -11,7 +10,7 @@ const Article = ({ textRight, title, img }) => {
     return (
       <Section>
         <div className={classes.wrapper}>
-          <img src={img} alt="article picture" />
+          <img src={img} alt="article" />
           <div className={classes.text}>
             <h1>{title}</h1>
             <p>
@@ -24,7 +23,11 @@ const Article = ({ textRight, title, img }) => {
             </p>
             <button className={classes["see-more"]}>
               See More{" "}
-              <FontAwesomeIcon style={{ color: "white" }} icon={faArrowRight} />
+              <FontAwesomeIcon
+                style={{ color: "white" }}
+                icon={faArrowRight}
+                id={classes.icon}
+              />
             </button>
           </div>
         </div>
@@ -48,7 +51,7 @@ const Article = ({ textRight, title, img }) => {
             <FontAwesomeIcon style={{ color: "white" }} icon={faArrowRight} />
           </button>
         </div>
-        <img src={img} alt="article picture" />
+        <img src={img} alt="article" />
       </div>
     </Section>
   );
