@@ -5,6 +5,8 @@ import article1 from "./assets/article1.png";
 import article2 from "./assets/article2.png";
 import WhereToStart from "./components/WhereToStart/WhereToStart";
 import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
+import MembershipCard from "./components/MembershipSection/MembershipCard";
+import MemebrshipSection from "./components/MembershipSection/MemebrshipSection";
 function App() {
   const router = createBrowserRouter([
     {
@@ -19,6 +21,7 @@ function App() {
             textRight={true}
             img={article2}
           />
+          <MemebrshipSection />
         </>
       ),
     },

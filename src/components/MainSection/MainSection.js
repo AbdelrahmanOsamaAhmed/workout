@@ -2,13 +2,14 @@ import React from "react";
 import Section from "../UI/Section";
 import classes from "./MainSection.module.css";
 import mainPic from "../../assets/main-pic.png";
-import nike from '../../assets/nike.png';
-import buzzfeed from '../../assets/buzzfeed.png';
+import nike from "../../assets/nike.png";
+import buzzfeed from "../../assets/buzzfeed.png";
 import {
   faCirclePlay,
   faPersonRunning,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Outlet } from "react-router-dom";
 
 const MainSection = () => {
   return (
@@ -31,8 +32,8 @@ const MainSection = () => {
           <div className={classes.feature}>
             <p>AS FEATURED IN</p>
             <div className={classes.featured}>
-              <img src={nike} className={classes.nike} alt='nike'/>
-              <img src={buzzfeed} className={classes.buzzfeed} alt='buzzfeed'/>
+              <img src={nike} className={classes.nike} alt="nike" />
+              <img src={buzzfeed} className={classes.buzzfeed} alt="buzzfeed" />
             </div>
           </div>
         </div>
@@ -67,6 +68,7 @@ const MainSection = () => {
           </div>
         </div>
       </div>
+      <Outlet />
     </Section>
   );
 };

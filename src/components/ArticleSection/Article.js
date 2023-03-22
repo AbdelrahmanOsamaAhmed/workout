@@ -6,7 +6,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import useWidthAndHeight from "../../hooks/useWidthAndHeight";
 const Article = ({ textRight, title, img }) => {
   const [width] = useWidthAndHeight();
-  if (width > 1500 && textRight) {
+  if (width > 1400 && textRight) {
     return (
       <Section>
         <div className={classes.wrapper}>

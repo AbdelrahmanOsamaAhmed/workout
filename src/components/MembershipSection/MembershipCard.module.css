@@ -1,0 +1,45 @@
+.card {
+  width: 538px;
+  height: 650px;
+  border-radius: 10px;
+  padding: 100px;
+}
+.card h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.card p {
+  margin-bottom: 40px;
+}
+.card ul {
+  list-style: none;
+  display: table;
+}
+.card li {
+  color: #b0b0b0;
+  display: table-row;
+}
+.card li::before {
+  content: "\2022";
+  display: inline-block;
+  font-size: 20px;
+  width: 1em;
+  margin-left: 1em;
+  display: table-cell;
+}
+@media only screen and (max-width: 767px) {
+  .card {
+    width: 338px;
+    height: 550px;
+    border-radius: 10px;
+    padding: 40px;
+  }
+  .card h1 {
+    font-size: 35px;
+  }
+  .card p,
+  li {
+    font-size: 15px;
+  }
+}
