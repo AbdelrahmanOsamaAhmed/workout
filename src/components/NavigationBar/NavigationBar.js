@@ -20,7 +20,7 @@ const NavigationBar = () => {
     <Fragment>
       <nav
         className={classes.navbar}
-        style={{ backgroundColor: !navbarColor ? " #171717" : "#262525" }}
+        style={{ backgroundColor: (!navbarColor||navbarItems) ? " #171717" : "#262525" }}
       >
         <div
           style={{

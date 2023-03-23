@@ -31,7 +31,6 @@
   display: block;
   text-align: center;
   font-size: 15px;
-  width: 200px;
   margin: 0 auto;
 }
 .mobile li {
@@ -50,6 +49,7 @@
   .navbar {
     display: block;
     padding: 30px 40px;
+    min-height: 0;
     
   }
 
