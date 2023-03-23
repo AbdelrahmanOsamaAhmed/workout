@@ -6,12 +6,14 @@ import article2 from "./assets/article2.png";
 import WhereToStart from "./components/WhereToStart/WhereToStart";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MemebrshipSection from "./components/MembershipSection/MemebrshipSection";
-import NavigationBar from "./components/NavigationBar/NavigationBar";
+import ErrorComponent from "./components/ErrorComponent/ErrorComponent";
+import Root from "./components/RootElement/Root";
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <NavigationBar />,
+      element: <Root />,
+      errorElement: <ErrorComponent />,
       children: [
         {
           path: "/",

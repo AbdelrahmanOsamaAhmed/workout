@@ -20,7 +20,9 @@ const NavigationBar = () => {
     <Fragment>
       <nav
         className={classes.navbar}
-        style={{ backgroundColor: (!navbarColor||navbarItems) ? " #171717" : "#262525" }}
+        style={{
+          backgroundColor: !navbarColor || navbarItems ? " #171717" : "#262525",
+        }}
       >
         <div
           style={{
@@ -43,12 +45,12 @@ const NavigationBar = () => {
         </div>
         {(navbarItems || width > 870) && (
           <ul className={width > 870 ? classes.ul : classes.mobile}>
-            <li>WORKOUTS</li>
-            <li>PROGRAMS</li>
-            <li>HEALTHY LIVING</li>
-            <li>COMMUNITY</li>
-            <li>ABOUT</li>
-            <li>STORE</li>
+            <NavLink to='/workout'>WORKOUTS</NavLink>
+            <NavLink to='/programs'>PROGRAMS</NavLink>
+            <NavLink to='/healthy-living'>HEALTHY LIVING</NavLink>
+            <NavLink to='/community'>COMMUNITY</NavLink>
+            <NavLink to='/about'>ABOUT</NavLink>
+            <NavLink to='/store'>STORE</NavLink>
           </ul>
         )}
       </nav>
