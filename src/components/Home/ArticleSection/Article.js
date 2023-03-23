@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import Section from "../UI/Section";
+import Section from "../../UI/Section";
 import classes from "./Article.module.css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import useWidthAndHeight from "../../hooks/useWidthAndHeight";
+import useWidthAndHeight from "../../../hooks/useWidthAndHeight";
 const Article = ({ textRight, title, img }) => {
   const [width] = useWidthAndHeight();
   if (width > 1400 && textRight) {
