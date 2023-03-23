@@ -1,7 +1,7 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Fragment, useEffect, useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useWidthAndHeight from "../../hooks/useWidthAndHeight";
 import classes from "./NavigationBar.module.css";
 
@@ -45,16 +45,15 @@ const NavigationBar = () => {
         </div>
         {(navbarItems || width > 870) && (
           <ul className={width > 870 ? classes.ul : classes.mobile}>
-            <NavLink to='/workout'>WORKOUTS</NavLink>
-            <NavLink to='/programs'>PROGRAMS</NavLink>
-            <NavLink to='/healthy-living'>HEALTHY LIVING</NavLink>
-            <NavLink to='/community'>COMMUNITY</NavLink>
-            <NavLink to='/about'>ABOUT</NavLink>
-            <NavLink to='/store'>STORE</NavLink>
+            <NavLink to="/workout">WORKOUTS</NavLink>
+            <NavLink to="/programs">PROGRAMS</NavLink>
+            <NavLink to="/healthy-living">HEALTHY LIVING</NavLink>
+            <NavLink to="/community">COMMUNITY</NavLink>
+            <NavLink to="/about">ABOUT</NavLink>
+            <NavLink to="/store">STORE</NavLink>
           </ul>
         )}
       </nav>
-      <Outlet />
     </Fragment>
   );
 };
