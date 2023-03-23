@@ -14,7 +14,7 @@ import { Outlet } from "react-router-dom";
 const MainSection = () => {
   return (
     <Section>
-      <div className={classes.wrapper}>
+      <div style={{marginTop:'150px'}} className={classes.wrapper}>
         <div className={classes["main-text"]}>
           <div className={classes.workOut}>
             <h1>
